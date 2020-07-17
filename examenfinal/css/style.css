@@ -1,0 +1,76 @@
+@font-face {
+    font-family: maPolice;
+    src: url(../font/ostrich-regular.ttf);
+}@font-face {
+    font-family: maPolice2;
+    src: url(../font/Galada-Regular.ttf);
+}
+hr{
+    margin-bottom:30px;
+    margin-top:30px;
+    max-width: 50px;
+    border-width: 3px;
+    border-color: black;
+}
+h1{
+    font-family: maPolice;
+    font-size: 6rem;
+}
+h2{
+    color: black;
+    font-family: maPolice2;
+
+}
+i{
+    color: seagreen;
+}
+img{
+    width: 100%;
+}
+#banniere{
+    padding: 9rem;
+    background-image: url("../img/imagebaniere4.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#partie2, #partie3, #partie4, #partie5{
+    padding-top: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+h1, p{
+    color: black;
+}
+#boutonmodal, #boutonchanson, #boutoncard{
+    background-color: seagreen;
+}
+h3, h4, h5{
+    color: black;
+    text-align: center;
+}
+#jumbotron{
+    background-image: url("../img/imagejumbotron1.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration-color: white;
+}
+#jumbotron2{
+    background-image: url("../img/banierepage3.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration-color: white;
+}
+html,body{
+    height: 100%;
+}
+#card{
+    background-image: url("../img/imagecard.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
