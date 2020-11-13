@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--
+index.html
+Daphnée Plante
+Dernière modification : 2020-11-12
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>PAIEMENT</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+</button>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-heart-o" aria-hidden="true"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link disabled" href="http://localhost:63342/friperie/index.html?_ijt=q2lc28m19o2rmun7an065i7qnb">ACCUEIL</a>
+            <a class="nav-item nav-link" href="http://localhost:63342/friperie/indexfemme.html?_ijt=5vgcr9tsjlt05spgadfrusr2bd">FEMME<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="http://localhost:63342/friperie/indexhomme.html?_ijt=5vgcr9tsjlt05spgadfrusr2bd">HOMME</a>
+            <a class="nav-item nav-link" href="http://localhost:63342/friperie/indexaccessoire.html?_ijt=jl1aik8g8fqfl4vq1ablm1orfv">ACCESSOIRES</a>
+            <a class="nav-item nav-link" href="http://localhost:63342/friperie/indexbienfats.html?_ijt=jl1aik8g8fqfl4vq1ablm1orfv">BIEN FAITS</a>
+            <a class="nav-item nav-link disabled" href="#nousjoindre">NOUS JOINDRE</a>
+        </div>
+    </div>
+</nav>
+<nav>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link disabled" href="http://localhost:63342/friperie/index.html?_ijt=q2lc28m19o2rmun7an065i7qnb">ACCUEIL</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://localhost:63342/friperie/indexfemme.html?_ijt=5vgcr9tsjlt05spgadfrusr2bd">FEMME <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="http://localhost:63342/friperie/indexhomme.html?_ijt=5vgcr9tsjlt05spgadfrusr2bd">HOMME</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://localhost:63342/friperie/indexaccessoire.html?_ijt=jl1aik8g8fqfl4vq1ablm1orfv">ACCESSOIRES</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://localhost:63342/friperie/indexbienfats.html?_ijt=jl1aik8g8fqfl4vq1ablm1orfv">BIEN FAITS</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#nousjoindre">NOUS JOINDRE</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section>
+<div class="container-fluid text-center" id="logo">
+    <div class="row">
+        <div class="col-12">
+            <h1>FLORA THRIFT</h1>
+            <h4>friperie en ligne</h4>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<div class="container-fluid text-center" id="formulaire">
+    <div class="row">
+        <div class="col-12">
+            <h2>Paiement par carte de crédit</h2>
+            <br>
+            <br>
+            <form onsubmit="return validerFormulaireChat()">
+                <label for="nom">Nom<em>*</em> : </label>
+                <input id="nom" type="text" maxlength="100" required placeholder="Thrift">
+                <label for="prenom">Prénom<em>*</em> : </label>
+                <input id="prenom" type="text" maxlength="100" required placeholder="Flora">
+
+                <br>
+                <br>
+                <br>
+
+                <label for="ddn">Date de naissance<em>*</em> :</label>
+                <input id="ddn" type="date" min="1990-01-01" max="2010-01-01" required>
+
+                <br>
+                <br>
+                <br>
+
+
+                <label for="telephone">Numéro de téléphone<em>*</em> :</label>
+                <input class=".input-phone" id="telephone" type="text" required placeholder="555-555-5555">
+
+                <br>
+                <br>
+                <br>
+
+                <label for="courriel" >Courriel<em>*</em> :</label>
+                <input id="courriel" type="email" required placeholder="florathrift@exemple.com">
+
+                <br>
+                <br>
+                <br>
+
+                <label for="adresse">Adresse<em>*</em> :</label>
+                <input id="adresse" type="text" required>
+
+                <br>
+                <br>
+                <br>
+
+                <label for="ville">Ville<em>*</em> :</label>
+                <input id="ville" type="text" required placeholder="">
+
+                <br>
+                <br>
+                <br>
+
+                <label for="numeroarticle">Numéro de l'article<em>*</em> :</label>
+                <input id="numeroarticle" type="text" required placeholder="#123456">
+
+                <br>
+                <br>
+                <br>
+
+                <label for="titulaire">Nom du titulaire de la carte<em>*</em> :</label>
+                <input id="titulaire" type="text" maxlength="100" required placeholder="Flora Thrift">
+
+
+                <br>
+                <br>
+                <br>
+
+                <label for="numerocarte">Numéro de la carte<em>*</em> :</label>
+                <input id="numerocarte" type="text" required placeholder="5555 5555 5555 5555">
+
+                <br>
+                <br>
+                <br>
+
+                <label for="dateexpiration">Date d'expiration de la carte<em>*</em> :</label>
+                <select name='expireMM' id='expireMM'>
+                    <option value=''>Mois</option>
+                    <option value='01'>Janvier</option>
+                    <option value='02'>Février</option>
+                    <option value='03'>Mars</option>
+                    <option value='04'>Avril</option>
+                    <option value='05'>Mai</option>
+                    <option value='06'>Juin</option>
+                    <option value='07'>Juillet</option>
+                    <option value='08'>Août</option>
+                    <option value='09'>Septembre</option>
+                    <option value='10'>Octobre</option>
+                    <option value='11'>Novembre</option>
+                    <option value='12'>Décembre</option>
+                </select>
+                <select name='expireYY' id='expireYY'>
+                    <option value=''>Année</option>
+                    <option value='20'>2020</option>
+                    <option value='21'>2021</option>
+                    <option value='22'>2022</option>
+                    <option value='23'>2023</option>
+                    <option value='24'>2024</option>
+                    <option value='25'>2025</option>
+                    <option value='26'>2026</option>
+                    <option value='27'>2027</option>
+                    <option value='28'>2028</option>
+                    <option value='29'>2029</option>
+                    <option value='30'>2030</option>
+                    <option value='31'>2031</option>
+                    <option value='32'>2032</option>
+                    <option value='33'>2033</option>
+                    <option value='34'>2034</option>
+                    <option value='35'>2035</option>
+                    <option value='36'>2036</option>
+                    <option value='37'>2037</option>
+                    <option value='38'>2038</option>
+                    <option value='39'>2039</option>
+                    <option value='40'>2040</option>
+                </select>
+                <input class="inputCard" type="hidden" name="expiry" id="dateexpiration" maxlength="4"/>
+
+                <br>
+                <br>
+                <br>
+
+                <button type="reset" class="btn btn-primary" data-toggle="modal" data-target="#modal">
+                    <input type="reset" value="Confirmer le paiment">
+                </button>
+
+                <div class="modal" tabindex="-1" role="dialog" id="modal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title">MERCI D'AVOIR MAGASINÉ CHEZ FLORA THRIFT!</h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Bonjour, <br> Nous confirmons que nous avons bien reçu votre
+                                    paiement. Une copie détaillée de votre facture vous à été envoyé par courriel.
+                                    N'hésitez pas à nous contacter pour toutes questions. <br>
+                                    Merci beaucoup!<br><br>
+                                    Flora Thrift<br>
+                                    555-555-5555<br>
+                                    daphneeplante5@gmail.com</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<section id="nousjoindre">
+    <h2>Nous joindre</h2>
+    <h2>Téléphone: 555-555-5555 Couriel : daphneeplante5@gmail.com</h2>
+    <div class="row">
+        <div class="col-2 offset-3"></div>
+        <div class="col-1">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </div>
+        <div class="col-1">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+    </div>
+</section>
+
+<script>
+    var cleave = new Cleave('.input-phone', {
+        phone: true,
+        phoneRegionCode: '{country}'
+    });
+</script>
+
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+</body>
+</html>
